@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+// 画像ファイルのパス変換用
+import getConfig from "next/config";
+const { basePath } = getConfig().publicRuntimeConfig;
+
 export default function Home() {
+  console.log('basePath: ', basePath);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -17,7 +22,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src= {`${basePath}/vercel.svg`}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -31,7 +36,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={`${basePath}/next.svg`}
           alt="Next.js Logo"
           width={180}
           height={37}
