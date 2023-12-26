@@ -5,8 +5,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-yarn install
-yarn dev
+chmod 777 ./starting.sh
+docker compose up --build
+docker compose exec app bash
 ```
 
 Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
