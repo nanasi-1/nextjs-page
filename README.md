@@ -6,11 +6,18 @@ First, run the development server:
 
 ```bash
 chmod 777 ./starting.sh
-docker compose up --build
+docker compose up -d --build
 docker compose exec app bash
 ```
 
-Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
+```bash
+# in コンテナ
+./starting.sh
+```
+
+上のコマンドを実行すると、まずtmuxが立ち上がります。  
+そしてserver(0番)ウィンドウで`yarn dev`が実行され、サーバーが起動されるようになっています。  
+ブラウザで[http://localhost:8000](http://localhost:8000) を見てみてください。
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
