@@ -6,7 +6,6 @@ import getConfig from "next/config";
 const { basePath } = getConfig().publicRuntimeConfig;
 
 export default function Home() {
-  console.log('basePath: ', basePath);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
