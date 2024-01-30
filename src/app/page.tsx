@@ -96,8 +96,21 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section>
-        <p>ひょうじてすと</p>
+      <section className={styles.section}>
+        <h2>概要</h2>
+        <p>
+          急に<a href="https://qiita.com/Sicut_study/items/3c5cd798313854a471a0">Reactアプリ100本ノック</a>がやりたくなった<br />
+          だからそれをやっていこうと思うよ<br />
+        </p>
+        <p>
+          にしてもこれ、レイアウトどうにかならんかな...<br />
+          tsxよくわからん<br />
+        </p>
+        <p>
+          まあきっといつか修正するさ！<br />
+          いつかね<br />
+          Reactに習熟したらね<br />
+        </p>
       </section>
     </main>
   )
