@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## 概要
+
+[Reactアプリ100本ノック](https://qiita.com/Sicut_study/items/3c5cd798313854a471a0)がやりたくなった
+
+
 ## Getting Started
 
 First, run the development server:

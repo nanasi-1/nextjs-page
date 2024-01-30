@@ -1,3 +1,5 @@
 {
-    "docker.dockerComposeDetached": false
+    "cSpell.words": [
+        "callout"
+    ]
 }
