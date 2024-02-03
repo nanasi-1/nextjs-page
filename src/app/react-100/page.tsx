@@ -1,10 +1,12 @@
 import { Metadata } from "next";
-import styles from "./page.module.css";
+import styles from "./styles/page.module.css";
 import pages from "./pageData.json";
+import { ListItemWithLink } from "./component";
+import "./styles/globals.css";
 
 // タイトルの編集
 export const metadata: Metadata = {
-    title: 'ページタイトル'
+    title: 'React100本ノックがやりたい'
 };
 
 export default function React100() {
@@ -17,11 +19,9 @@ export default function React100() {
             </p>
             <h2 className={styles.heading}>記事のリンクまとめ</h2>
             <ol className={styles.ol}>
-                {pages.map(({url, title}) => {
-                    return (
-                        <li><a href={url}>{title}</a></li>
-                    );
-                })}
+                {pages.map(({url, title}) => {return (
+                    <ListItemWithLink url={url} title={title}/>
+                )})}
             </ol>
         </main>
     );
