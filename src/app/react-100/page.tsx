@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import styles from "./styles/page.module.css";
+import { PageList } from "./component";
 import pages from "./pageData.json";
-import { ListItemWithLink } from "./component";
 import "./styles/globals.css";
 
 // タイトルの編集
@@ -18,11 +18,7 @@ export default function React100() {
                 今の所思っているだけです。<br />
             </p>
             <h2 className={styles.heading}>記事のリンクまとめ</h2>
-            <ol className={styles.ol}>
-                {pages.map(({url, title}) => {return (
-                    <ListItemWithLink url={url} title={title}/>
-                )})}
-            </ol>
+            <PageList pages={pages} />
         </main>
     );
 }

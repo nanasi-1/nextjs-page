@@ -11,10 +11,20 @@ import styles from "./styles/page.module.css";
  * ```
  * ループとかで使うイメージ。
  */
-export function ListItemWithLink({url, title}: {url: string, title: string}) {
+function ListItemWithLink({url, title}: PageInfo) {
     return (
         <li>
             <a href={url} target="_blank" className={styles.a}>{title}</a>
         </li>
+    );
+}
+
+export function PageList({pages}: {pages: PageInfo[]}) {
+    return (
+        <ol className={styles.ol}>
+            {pages.map(({url, title}) => {return (
+                <ListItemWithLink url={url} title={title}/>
+            )})}
+        </ol>
     );
 }
