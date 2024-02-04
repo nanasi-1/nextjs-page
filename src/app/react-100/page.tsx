@@ -19,6 +19,9 @@ export default function React100() {
             </p>
             <h2 className={styles.heading}>記事のリンクまとめ</h2>
             <PageList pages={pages} />
+            <p>
+                ちょっとあまりの難易度の高さに絶望したので以上
+            </p>
         </main>
     );
 }
