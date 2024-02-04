@@ -13,7 +13,7 @@ import styles from "./styles/page.module.css";
  */
 function ListItemWithLink({url, title}: PageInfo) {
     return (
-        <li>
+        <li key={title}>
             <a href={url} target="_blank" className={styles.a}>{title}</a>
         </li>
     );
