@@ -1,5 +1,5 @@
 import './styles.css';
-import App from "./App";
+import Board from "./Board";
 
 export default function () {
     return (
@@ -11,7 +11,7 @@ export default function () {
                 今のところ思ってるだけ<br />
             </p>
             <hr />
-            <App />
+            <Board />
         </main>
     );
 }
