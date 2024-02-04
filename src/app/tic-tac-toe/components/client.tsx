@@ -1,8 +1,13 @@
+import { useState } from "react";
+
 /** マス目一つ一つ */
-export function Square({ value }: { value: string }) {
+export function Square() {
+    const [value, setValue] = useState<'×' | '○' | null>(null);
+
     function handleClick() {
-        console.log('hello world!');
+        setValue('×');
     }
+    
     return (
         <button
             className="square"
