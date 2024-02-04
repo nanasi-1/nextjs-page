@@ -1,5 +1,11 @@
 import './styles.css';
 import Game from "./components/Game";
+import { Metadata } from 'next';
+
+// タイトルの編集
+export const metadata: Metadata = {
+    title: '三目並べ'
+};
 
 export default function () {
     return (
