@@ -1,0 +1,59 @@
+body {
+    background: white;
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+a {
+    color: blue;
+}
+
+hr {
+    margin-block: 30px;
+}
+
+button {
+    background-color: lightblue;
+    padding: 5px;
+    color: inherit;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 33px 33px 33px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+    color: inherit;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 40px;
+
+    > li {
+        margin-bottom: 5px;
+    }
+}
