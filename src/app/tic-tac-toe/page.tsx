@@ -1,4 +1,5 @@
-import './globals.css';
+import './styles.css';
+import App from "./App";
 
 export default function () {
     return (
@@ -9,6 +10,8 @@ export default function () {
                 のやつを作りたいと思ってる<br />
                 今のところ思ってるだけ<br />
             </p>
+            <hr />
+            <App />
         </main>
     );
 }
