@@ -1,5 +1,5 @@
 import './styles.css';
-import Board from "./components/Board";
+import Game from "./components/Game";
 
 export default function () {
     return (
@@ -11,7 +11,7 @@ export default function () {
                 今のところ思ってるだけ<br />
             </p>
             <hr />
-            <Board />
+            <Game />
         </main>
     );
 }
